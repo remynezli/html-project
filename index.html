@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
+    header, nav, section, footer { padding: 20px; }
+    nav a { margin-right: 15px; text-decoration: none; color: #333; }
+    nav { background: #f4f4f4; padding: 15px; }
+    footer { background: #333; color: white; text-align: center; }
+    .section-title { font-size: 24px; margin-top: 30px; }
+    form input, form textarea { display: block; margin-bottom: 10px; padding: 10px; width: 100%; max-width: 400px; }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <header>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home">
+    <h1>Welcome to My Portfolio</h1>
+    <p>Hi, I'm [Your Name], an aspiring web developer.</p>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <h2 class="section-title">About Me</h2>
+    <p>I’m passionate about creating websites and learning new technologies.</p>
+    <video controls width="320">
+      <source src="myintro.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+  </section>
+
+  <!-- Work Section -->
+  <section id="work">
+    <h2 class="section-title">My Work</h2>
+    <ul>
+      <li>Project 1 – <a href="#">Link</a></li>
+      <li>Project 2 – <a href="#">Link</a></li>
+      <li>Project 3 – <a href="#">Link</a></li>
+    </ul>
+  </section>
+
+  <!-- Resume Section -->
+  <section id="resume">
+    <h2 class="section-title">Resume</h2>
+    <table border="1" cellpadding="10">
+      <thead>
+        <tr>
+          <th>Year</th>
+          <th>Position</th>
+          <th>Company</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>2023</td>
+          <td>Intern</td>
+          <td>ABC Tech</td>
+        </tr>
+        <tr>
+          <td>2024</td>
+          <td>Junior Developer</td>
+          <td>XYZ Solutions</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2 class="section-title">Contact Me</h2>
+    <form>
+      <input type="text" name="name" placeholder="Your name" required>
+      <input type="email" name="email" placeholder="Your email" required>
+      <textarea name="message" placeholder="Your message" rows="4" required></textarea>
+      <input type="submit" value="Send">
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 My Portfolio – Built with love and HTML</p>
+  </footer>
+
+</body>
+</html>

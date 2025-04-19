@@ -1,99 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>My Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-    header, nav, section, footer { padding: 20px; }
-    nav a { margin-right: 15px; text-decoration: none; color: #333; }
-    nav { background: #f4f4f4; padding: 15px; }
-    footer { background: #333; color: white; text-align: center; }
-    .section-title { font-size: 24px; margin-top: 30px; }
-    form input, form textarea { display: block; margin-bottom: 10px; padding: 10px; width: 100%; max-width: 400px; }
-  </style>
+  <title>Rami's Portfolio</title>
 </head>
 <body>
-
-  <!-- Navigation -->
-  <header>
-    <nav>
-      <a href="#home">Home</a>
-      <a href="#about">About</a>
-      <a href="#work">Work</a>
-      <a href="#resume">Resume</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </header>
+  <!-- Navigation Bar -->
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#work">Work</a></li>
+      <li><a href="#resume">Resume</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
 
   <!-- Home Section -->
-  <section id="home">
+  <header id="home">
     <h1>Welcome to My Portfolio</h1>
-    <p>Hi, I'm [Your Name], an aspiring web developer.</p>
-  </section>
+    <p>I'm Rami Nezli, a geologist shifting to software engineering. Here's what I do.</p>
+  </header>
 
   <!-- About Section -->
   <section id="about">
-    <h2 class="section-title">About Me</h2>
-    <p>I’m passionate about creating websites and learning new technologies.</p>
-    <video controls width="320">
-      <source src="myintro.mp4" type="video/mp4">
+    <h2>About Me</h2>
+    <p>I’m currently working as a field engineer in Saudi Arabia and studying software engineering online. I love learning, coding, and working on cool projects.</p>
+    <audio controls>
+      <source src="intro.mp3" type="audio/mpeg">
+      Your browser does not support the audio element.
+    </audio>
+  </section>
+
+   <!-- Work Section -->
+   <section id="work">
+    <h2>Work</h2>
+    <p>I come from a background in geology and geochemistry, where I’ve worked on field operations and data interpretation. Over time, I developed a passion for coding and transitioned into building tools that merge science with technology. Some of my work includes:</p>
+    <ul>
+      <li>Creating dynamic HTML reports that display geological graphs and enable sample-specific analysis</li>
+      <li>Building small web projects using HTML, JavaScript, and Python for learning and experimentation</li>
+    </ul>
+    <video width="320" height="240" controls>
+      <source src="demo.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
   </section>
 
-  <!-- Work Section -->
-  <section id="work">
-    <h2 class="section-title">My Work</h2>
-    <ul>
-      <li>Project 1 – <a href="#">Link</a></li>
-      <li>Project 2 – <a href="#">Link</a></li>
-      <li>Project 3 – <a href="#">Link</a></li>
-    </ul>
-  </section>
-
   <!-- Resume Section -->
   <section id="resume">
-    <h2 class="section-title">Resume</h2>
-    <table border="1" cellpadding="10">
-      <thead>
-        <tr>
-          <th>Year</th>
-          <th>Position</th>
-          <th>Company</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>2023</td>
-          <td>Intern</td>
-          <td>ABC Tech</td>
-        </tr>
-        <tr>
-          <td>2024</td>
-          <td>Junior Developer</td>
-          <td>XYZ Solutions</td>
-        </tr>
-      </tbody>
-    </table>
+    <h2>Resume</h2>
+    <article>
+      <h3>Geologist</h3>
+      <p><strong>Role:</strong> Field operations, geochemistry, and mudlogging</p>
+    </article>
+    <article>
+      <h3>Student</h3>
+      <p><strong>Program:</strong> MSc Software Engineering</p>
+      <p><strong>Skills:</strong> Building web apps, tools, and learning full-stack development</p>
+    </article>
   </section>
 
   <!-- Contact Section -->
   <section id="contact">
-    <h2 class="section-title">Contact Me</h2>
-    <form>
-      <input type="text" name="name" placeholder="Your name" required>
-      <input type="email" name="email" placeholder="Your email" required>
-      <textarea name="message" placeholder="Your message" rows="4" required></textarea>
+    <h2>Contact Me</h2>
+    <form action="#" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required><br><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required><br><br>
+
+      <label for="message">Message:</label><br>
+      <textarea id="message" name="message" rows="4" cols="50" required></textarea><br><br>
+
       <input type="submit" value="Send">
     </form>
   </section>
 
   <!-- Footer -->
   <footer>
-    <p>&copy; 2025 My Portfolio – Built with love and HTML</p>
+    <p>&copy; 2025 Rami Nezli. All rights reserved.</p>
   </footer>
-
 </body>
 </html>
